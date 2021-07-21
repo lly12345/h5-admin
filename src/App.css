@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: calc(100vw / 7.5);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100% !important;
+}
+
+:root{
+  --primary: #07bfbd;
+  --vol-primary:#56b790;
+  --gray-border:#e2e2e2;
+  --btn-border:#bbbbbb;
+ 
+}
+button{
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,119 @@
+.register-activity{
+    --theme-primary: #07bfbd !important;
+    padding-bottom: 10px;
+    .tabs{
+        position: fixed;
+        top: 50px;
+        width: 100vw;
+        height: 45px;
+        background-color: #fff;
+        z-index: 99;
+    }
+    .picker{
+        padding: 60px 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .btn{
+            
+            border: 1px solid var(--btn-border);
+            font-size: 14px;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            border-radius: 5px;
+            span{
+                margin: 5px 0 5px 5px;
+                width: 12px;
+                &::before,&::after{
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    border-bottom: 8px transparent dashed;
+                    border-left: 6px transparent dashed;
+                    border-right: 6px transparent dashed;
+                    border-radius: 3px;
+                }
+                &::before{
+                    border-top: 8px var(--btn-border) solid;
+                }
+                &::after{
+                    margin-top: -4px;
+                    border-top: 8px #fff solid;
+                }
+            }
+        }
+    }
+    
+    .container{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul,li{
+            list-style: none;
+            display: flex;
+        }
+        ul{
+            flex-direction: column;
+            li{
+                line-height: 30px;
+                .label{
+                    min-width: 70px;
+                }
+            }
+        }
+        .activity-box{
+            width: 95%;
+            background: #ececec61;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            .top{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+        li:last-child{
+            .label{
+                flex: 1;
+            }
+        }
+        
+        .operate{
+            display: flex;
+            flex: 3;
+            justify-content: flex-end;
+            a,span{
+                font-size: 15px;
+                margin-right: 12px;
+                color: var(--primary);
+            }
+        }
+    }
+}
+
+.register-popup{
+    width: 80vw;
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+    .za-cell__title{
+        width: 90px;
+    }
+    .za-radio-group__inner{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .btn{
+        margin: 0 auto;
+        display: block;
+    }
+   
+}
