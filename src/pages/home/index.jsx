@@ -11,26 +11,28 @@ import menu5 from '@/assets/menu5.png'
 import { NavLink, useHistory } from "react-router-dom"
 
 const menuList = [{
-    title: '活动管理',
+    title: '商品管理',
     img: menu1,
-    url: '/activities'
+    url: '/goods'
 }, {
-    title: '活动场次管理',
+    title: '订单管理',
     img: menu2,
     url: '/activityPeriod'
 }, {
-    title: '扫码报名',
+    title: '客户管理',
     img: menu3,
     url: '/registerActivity/all'
 }, {
-    title: '公开报名',
+    title: '系统管理',
     img: menu4,
     url: '/applyActivity/notContact'
-}, {
-    title: '问卷管理',
-    img: menu5,
-    url:'/home'
-}]
+}, 
+// {
+//     title: '问卷管理',
+//     img: menu5,
+//     url:'/home'
+// }
+]
 
 
 export default function Home() {

@@ -32,7 +32,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://admin.cfqz.local',
+        target: 'http://admin.cjj.x',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
